@@ -1,0 +1,64 @@
+[ {
+  "label": "Formatted Data",
+  "type": "dropdown",
+  "options": [
+    {
+      "label": "LAMMPS-DISP",
+      "value": "LAMMPS-DISP"
+    },
+    {
+      "label": "LAMMPS-XYZ",
+      "value": "LAMMPS-XYZ"
+    },
+    {
+      "label": "PARCAS",
+      "value": "PARCAS"
+    },
+    {
+      "label": "XYZ",
+      "value": "XYZ"
+    },
+    {
+      "label": "CASCADESDBLIKECOLS",
+      "value": "CASCADESDBLIKECOLS"
+    }
+  ]
+},
+    {
+      "label": "substrate",
+      "type": "text",
+      "info": "Enter type of metal"
+    },
+    {
+      "label": "latticeConstant",
+      "type": "number",
+      "info": "Enter lattice constant value of the atom"
+    },
+    {
+      "label": "recen",
+      "type": "text",
+      "info": "Recoil energy"
+    },
+    {
+      "label": "offset",
+      "type": "number",
+      "info": "Enter offset value"
+    },
+    {
+      "label": "potentialUsed",
+      "type": "text",
+      "info": "Enter type of Potential used"
+    },
+    {
+      "label": "author",
+      "type": "text",
+      "info": "Enter Author name"
+    }
+    ,
+    {
+      "label": "folderNameWithRecen",
+      "type": "text",
+      "info": "Directory Path"
+    }
+  ]
+  

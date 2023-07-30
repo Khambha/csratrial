@@ -1,0 +1,63 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Electron JSON Editor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>AnuVikar</h1>
+    <button id="helpButton">Help</button>
+  </header>
+
+  <!-- Help section (hidden by default) -->
+  <div id="helpSection" class="help-section hidden">
+    <h2>Application Information</h2>
+    <p>This is the AnuVikar application. It allows you to create and process JSON files based on the provided form parameters. Follow the steps below:</p>
+    <ol>
+      <li>Fill in the form fields with the required information.</li>
+      <li>Click the "Browse" button to select the output folder.</li>
+      <li>Click the "Create JSON" button to generate the JSON file.</li>
+      <li>Wait for the application to finish processing the data.</li>
+      <li>The processed data will be saved in the selected output folder.</li>
+      <li>Click the "Terminate" button to stop the ongoing process.</li>
+    </ol>
+  
+    <!-- Add any additional information or content as needed -->
+    <button id="closeHelpButton">Close</button>
+  </div>
+
+  <div class="container">
+    <div class="form-container">
+      <form id="jsonForm">
+        <!-- The form elements will be dynamically created in renderer.js -->
+        <!-- Add this input field to the form -->
+      
+
+
+      </form>
+      <!-- Inside the <form> element -->
+        
+
+      <div class="log-container">
+        <div id="logArea"></div>
+      </div>
+    
+      <div class="button-container">
+        <button id="terminateButton">Terminate</button>
+      </div>
+    
+      <div class="alert" id="json-created-alert"></div>
+      <div class="alert" id="file-saved-alert"></div>
+    </div>
+
+  </div>
+  <footer>
+    <p>&copy; 2023 Paila corp. All rights reserved.</p>
+  </footer>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
